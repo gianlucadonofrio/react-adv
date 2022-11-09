@@ -18,7 +18,7 @@ export const Navigation = () => {
             <img src={logo} alt="logo" />
             <ul>
               {routes.map(({ to, name }) => (
-                <li key={to}>
+                <li key={to} >
                   <NavLink
                     to={to}
                     className={({ isActive }) => (isActive ? 'nav-active' : '')}
